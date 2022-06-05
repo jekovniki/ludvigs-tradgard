@@ -14,8 +14,11 @@
         }
     ],
     "require": {
-        "pantheon-upstreams/upstream-configuration": "*",
-        "drush/drush": "^10"
+        "drupal/metatag": "^1.19",
+        "drupal/pathauto": "^1.10",
+        "drupal/simple_sitemap": "^4.1",
+        "drush/drush": "^10",
+        "pantheon-upstreams/upstream-configuration": "*"
     },
     "conflict": {
             "drupal/drupal": "*"
