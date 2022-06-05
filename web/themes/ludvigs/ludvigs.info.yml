@@ -7,6 +7,8 @@ base theme: stable
 
 version: 1.0
 libraries:
+  - ludvigs/global-styling
+  - ludvigs/global-scripts
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.normalize
   - core/modules/system/css/system.module.css
