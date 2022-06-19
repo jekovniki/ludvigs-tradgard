@@ -2,7 +2,7 @@ global-css:
   version: VERSION
   css:
     theme:
-      assets/styles/css/main.css: { minified: true }
+      assets/styles/css/main.css: {}
 
 global-scripts:
   version: 1.0
