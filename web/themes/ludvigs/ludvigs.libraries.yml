@@ -1,5 +1,5 @@
-global-css:
-  version: VERSION
+global-styles:
+  version: 1.0
   css:
     theme:
       assets/styles/css/main.css: {}
