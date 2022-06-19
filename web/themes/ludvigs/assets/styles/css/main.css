@@ -1,13 +1,1 @@
-/**
- * Main colors
- */
-body {
-  margin: 0px;
-  background-color: #f2daaa; }
-
-header.main {
-  display: flex;
-  justify-content: space-between; }
-
-footer {
-  background-color: #ffffff; }
+body{margin:0px;background-color:#f2daaa}header.main{display:flex;justify-content:space-between}footer{background-color:#fff}
