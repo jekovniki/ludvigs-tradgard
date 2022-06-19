@@ -1,8 +1,0 @@
-/**
-* Implements hook__page_attachments()
-*/
-
-function ludvigs_page_attachments(array &$attachments) {
-    $attachments['#attached']['library'][] = 'ludvigs/global-styles';
-    $attachments['#attached']['library'][] = 'ludvigs/global-scripts';
-}
