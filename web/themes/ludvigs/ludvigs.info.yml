@@ -8,7 +8,7 @@ logo: logo.png
 
 version: 1.0
 libraries:
-  - ludvigs/global-styling
+  - ludvigs/global
   - ludvigs/global-scripts
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.normalize
