@@ -26,7 +26,7 @@ header.main {
                 &:nth-child(1) {
                     margin: 0 1.5rem 0 0;
                 }
-                &:nth-last-of-type() {
+                &:last-child {
                     margin: 0 0 0 1.15rem;
                 }
                 a {
