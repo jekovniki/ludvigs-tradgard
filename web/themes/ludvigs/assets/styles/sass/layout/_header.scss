@@ -3,6 +3,7 @@ header.main {
     display: flex;
     justify-content: space-between;
     background-color: $white;
+    padding: 0 1rem;
 
     nav {
         display: flex;
@@ -21,15 +22,31 @@ header.main {
 
             li {
                 margin: 0 1.5rem;
-                
+                &:nth-child(1) {
+                    margin: 0 1.5rem 0 0;
+                }
+                &:nth-last-child() {
+                    margin: 0 0 0 1.15rem;
+                }
                 a {
                     color: $main;
                 }
             }
         }
     }
+    #block-ludvigs-branding {
+        a {
+            visibility: hidden;
+        }
+    }
 
     img {
         height:100%;
+    }
+}
+
+@media only screen and (min-width:767px) {
+    header.main {
+        padding: 0 2rem;
     }
 }
