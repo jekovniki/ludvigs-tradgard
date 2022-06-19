@@ -1,4 +1,5 @@
 global-styling:
+version: 1.0
   css:
     theme:
       assets/styles/css/main.css: {minified: true}
