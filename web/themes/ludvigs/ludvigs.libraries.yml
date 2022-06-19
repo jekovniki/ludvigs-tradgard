@@ -1,4 +1,5 @@
-global:
+global-css:
+  version: VERSION
   css:
     theme:
       assets/styles/css/main.css: { minified: true }
