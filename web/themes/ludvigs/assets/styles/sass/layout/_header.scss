@@ -4,6 +4,7 @@ header.main {
     justify-content: space-between;
     background-color: $white;
     padding: 0 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
     nav {
         display: flex;
@@ -25,7 +26,7 @@ header.main {
                 &:nth-child(1) {
                     margin: 0 1.5rem 0 0;
                 }
-                &:nth-last-child() {
+                &:nth-last-of-type() {
                     margin: 0 0 0 1.15rem;
                 }
                 a {
@@ -37,6 +38,9 @@ header.main {
     #block-ludvigs-branding {
         a {
             visibility: hidden;
+            img {
+                visibility: visible;
+            }
         }
     }
 
