@@ -21,19 +21,33 @@
         "pantheon-upstreams/upstream-configuration": "*"
     },
     "conflict": {
-            "drupal/drupal": "*"
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/composer/{$name}": ["type:drupal-module"],
-            "web/profiles/composer/{$name}": ["type:drupal-profile"],
-            "web/themes/composer/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/composer/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/composer/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/composer/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/private/scripts/quicksilver/{$name}/": [
+                "type:quicksilver-script"
+            ]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
@@ -58,6 +72,11 @@
         "sort-packages": true,
         "platform": {
             "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true
         }
     }
 }
