@@ -18,11 +18,12 @@ stylesheets-remove:
 regions:
   header: "Header"
   primary_menu: 'Primary menu'
+  section_1: 'Top section'
   warnings_messages: 'Drupal messages section'
   content: 'Content'
   tiles: 'Front page tiles'
-  seciont_2: 'Front page section 2'
-  section_3: 'Section 3'
+  seciont_2: 'Middle section'
+  section_3: 'Bottom section'
   sidebar_first: 'Left Sidebar'
   sidebar_second: 'Right Sidebar'
   footer: 'Footer'
