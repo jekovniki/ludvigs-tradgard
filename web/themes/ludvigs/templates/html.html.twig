@@ -22,7 +22,7 @@
         {{ page.content }}
     </main>
 {% endif %}
-{% if page.sidebar_first || page.sidebar_second %}
+{% if (page.sidebar_first) or (page.sidebar_second) %}
     <div class="sidebar_sections">
         <aside>
             {{ page.sidebar_first }}
