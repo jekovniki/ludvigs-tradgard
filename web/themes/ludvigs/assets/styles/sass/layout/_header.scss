@@ -1,7 +1,14 @@
 header.main {
+    max-height: 75px;
     display: flex;
     justify-content: space-between;
+    background-color: $white;
+
     nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
         h2 {
             display: none;
         }
@@ -13,10 +20,16 @@ header.main {
             display: flex;
 
             li {
+                margin: 0 1.5rem;
+                
                 a {
                     color: $main;
                 }
             }
         }
+    }
+
+    img {
+        height:100%;
     }
 }
