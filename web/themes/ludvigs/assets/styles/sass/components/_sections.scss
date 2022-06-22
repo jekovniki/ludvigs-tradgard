@@ -1,5 +1,8 @@
 #section-top {
     padding: 0 1rem;
+    .two-columns {
+        margin-top: 5px;
+    }
 }
 
 .two-columns {
@@ -17,6 +20,8 @@
     .two-columns {
         display: flex;
         flex-flow: row-reverse;
+        align-items: center;
+
         > div {
             width: 50%;
         }
