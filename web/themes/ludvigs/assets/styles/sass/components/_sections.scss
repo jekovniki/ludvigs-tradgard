@@ -1,0 +1,25 @@
+#section-top {
+    padding: 0 1rem;
+}
+
+.two-columns {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    #section-top {
+        padding: 0 2rem;
+    }
+
+    .two-columns {
+        display: flex;
+        flex-flow: row-reverse;
+        > div {
+            width: 50%;
+        }
+    }
+
+}
