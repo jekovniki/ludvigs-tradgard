@@ -13,6 +13,14 @@ a {
     padding: 10px 20px;
     background-color: $main;
     color: $main-bg;
+    border-radius: 3px;
+    transition: 0.3s;
+
+    &:hover {
+        transition: 0.3s;
+        background-color: $white;
+        color: $main;
+    }
 }
 
 h2 {
