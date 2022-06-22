@@ -7,8 +7,14 @@
 
 .two-columns {
     img {
+        display: none;
         max-width: 100%;
         height: auto;
+    }
+    .mobile {
+        img {
+            display:block;
+        }
     }
     .left-column {
         p {
@@ -20,6 +26,14 @@
 @media only screen and (min-width: 767px) {
     #section-top {
         padding: 0 2rem;
+        img {
+            display: block;
+        }
+        .mobile {
+            img {
+                display: none;
+            }
+        }
     }
 
     .two-columns {
