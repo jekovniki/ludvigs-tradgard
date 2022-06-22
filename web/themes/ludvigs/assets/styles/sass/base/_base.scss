@@ -9,6 +9,13 @@ a {
     color: $main;
 }
 
+.main-button {
+    padding: 10px 20px;
+    background-color: $main;
+    color: $main-bg;
+}
+
 h2 {
     font-size: 3rem;
+    margin-block-end: 1rem;
 }
