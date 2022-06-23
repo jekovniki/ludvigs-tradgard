@@ -1,12 +1,12 @@
 header.main {
     background-color: $white;
-    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
     .header-navigation {
         max-height: 75px;
         display: flex;
         justify-content: space-between;
         padding: 0 1rem;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
         nav {
             display: flex;
