@@ -1,56 +1,69 @@
 header.main {
-    max-height: 75px;
-    display: flex;
-    justify-content: space-between;
     background-color: $white;
-    padding: 0 1rem;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
-    nav {
+    
+    .header-navigation {
+        max-height: 75px;
         display: flex;
-        align-items: center;
-        height: 100%;
+        justify-content: space-between;
+        padding: 0 1rem;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
-        h2 {
-            display: none;
-        }
-        ul {
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-inline-start: 0;
-            list-style-type: none;
+        nav {
             display: flex;
+            align-items: center;
+            height: 100%;
 
-            li {
-                margin: 0 1.5rem;
-                &:nth-child(1) {
-                    margin: 0 1.5rem 0 0;
-                }
-                &:last-child {
-                    margin: 0 0 0 1.15rem;
-                }
-                a {
-                    color: $main;
+            h2 {
+                display: none;
+            }
+            ul {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0;
+                list-style-type: none;
+                display: flex;
+
+                li {
+                    margin: 0 1.5rem;
+                    &:nth-child(1) {
+                        margin: 0 1.5rem 0 0;
+                    }
+                    &:last-child {
+                        margin: 0 0 0 1.15rem;
+                    }
+                    a {
+                        color: $main;
+                    }
                 }
             }
         }
-    }
-    #block-ludvigs-branding {
-        a {
-            visibility: hidden;
-            img {
-                visibility: visible;
+        #block-ludvigs-branding {
+            a {
+                visibility: hidden;
+                img {
+                    visibility: visible;
+                }
             }
         }
-    }
 
-    img {
-        height:100%;
+        img {
+            height:100%;
+        }
     }
 }
 
 @media only screen and (min-width:767px) {
     header.main {
         padding: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    header {
+        >.header-navigation {
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

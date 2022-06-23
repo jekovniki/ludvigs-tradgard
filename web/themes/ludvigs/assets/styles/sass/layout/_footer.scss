@@ -33,3 +33,13 @@ footer {
         }
     }
 }
+
+@media only screen and (min-width: 1921px) {
+    footer {
+        > div {
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -7,3 +7,13 @@ main {
         padding: 0 2rem;
     }
 }
+
+@media only screen and (min-width: 1921px) {
+    main {
+        > div {
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
