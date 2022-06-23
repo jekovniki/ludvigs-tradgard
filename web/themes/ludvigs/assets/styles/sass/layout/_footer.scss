@@ -13,17 +13,23 @@ footer {
 
         #block-ludvigs-footer {
             color: $text-color;
-
-            ul {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 1.5rem;
-                font-size: 1.25rem;
-            }
         }
     }
 }
 
 #block-ludvigs-footer {
     padding: 1.5rem 0;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+        font-size: 1.25rem;
+
+        li {
+            a {
+                color: $text-color;
+            }
+        }
+    }
 }
