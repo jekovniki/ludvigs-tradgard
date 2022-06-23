@@ -47,3 +47,17 @@
     }
 
 }
+
+
+.sidebar_sections {
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: 767px) {
+    .sidebar_sections {
+        padding: 0 2rem;
+        > aside {
+            width: 50%;
+        }
+    }
+}
