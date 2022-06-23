@@ -16,12 +16,16 @@
     </mark>
 {% endif %}
 {% if page.tiles %}
-    <details>
+    <section id="tiles">
         {{ page.tiles }}
-    </details>
+    </section>
 {% endif %}
 {% if page.content %}
-    <main>
+    <main
+    {% if is_front %}
+        style="display: none;"
+    {% endif %}
+    >
         {{ page.content }}
     </main>
 {% endif %}
