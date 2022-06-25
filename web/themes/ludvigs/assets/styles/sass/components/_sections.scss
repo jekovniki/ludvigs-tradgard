@@ -84,7 +84,6 @@
 
             >div {
                 margin:0;
-                padding: 0 7rem;
             }
         }
     }
@@ -94,6 +93,9 @@
     #tiles {
         >div {
             grid-gap: 9rem;
+            >div {
+                padding: 0 7rem;
+            }
         }
     }
 }
