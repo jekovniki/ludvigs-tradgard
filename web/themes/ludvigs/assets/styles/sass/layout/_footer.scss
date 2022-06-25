@@ -1,6 +1,6 @@
 footer {
     background-color: $white;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
 
     h2 {
         display: none;
@@ -9,7 +9,7 @@ footer {
 
 @media only screen and (min-width: 767px) {
     footer {
-        padding: 0 2rem;
+        padding: 5rem 2rem;
 
         #block-ludvigs-footer {
             color: $text-color;
