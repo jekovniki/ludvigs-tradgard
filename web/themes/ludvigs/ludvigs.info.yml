@@ -25,6 +25,6 @@ regions:
   content: 'Content'
   sidebar_first: 'Left Sidebar'
   sidebar_second: 'Right Sidebar'
-  seciont_2: 'Middle section'
+  section_2: 'Middle section'
   section_3: 'Bottom section'
   footer: 'Footer'
