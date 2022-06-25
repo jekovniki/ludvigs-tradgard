@@ -43,3 +43,23 @@ footer {
         }
     }
 }
+
+// Social icons
+#block-socialicons {
+    > div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    #block-socialicons {
+        > div {
+            p {
+                img {
+                    margin: 0 2rem;
+                }
+            }
+        }
+    }
+}
