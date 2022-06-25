@@ -20,7 +20,7 @@ footer {
 #block-ludvigs-footer {
     padding: 1.5rem 0;
 
-    ul {
+    >ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5rem;
