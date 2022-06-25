@@ -1,0 +1,51 @@
+<header class="main">
+    <div class="header-navigation">
+        {{ page.header }}
+        {{ page.primary_menu }}
+    </div>
+</header>
+{% if page.section_1 %}
+    <section id="section-top">
+        {{ page.section_1 }}
+    </section>
+{% endif %}
+{% if page.warnings_messages %}
+    <mark>
+        {{ page.warnings_messages }}
+    </mark>
+{% endif %}
+{% if page.tiles %}
+    <section id="tiles">
+        {{ page.tiles }}
+    </section>
+{% endif %}
+{% if (page.content) and (not root_path) %}
+    <main>
+        {{ page.content }}
+    </main>
+{% endif %}
+{% if (page.sidebar_first) or (page.sidebar_second) %}
+    <div class="sidebar_sections">
+        <aside>
+            {{ page.sidebar_first }}
+        </aside class="sidebar_first">
+        <aside class="sidebar_second">
+            {{ page.sidebar_second }}
+        </aside>
+    </div>
+{% endif %}
+{% if page.section_2 %}
+    <section id="section-middle">
+        {{ page.section_2 }}
+    </section>
+{% endif %}
+{% if page.section_3 %}
+    <section id="section-bottom">
+        {{ page.section_3 }}
+    </section>
+{% endif %}
+{% if page.footer %}
+    <footer>
+        {{ page.footer }}
+    </footer>
+{% endif %}
