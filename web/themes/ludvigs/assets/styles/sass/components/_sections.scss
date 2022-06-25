@@ -151,19 +151,19 @@
     
             > div {
                 width: 50%;
+                
+                img {
+                    display: block;
+                }
+                .mobile {
+                    img {
+                        display: none;
+                    }
+                }
             }
 
             .left-column {
                 margin-left: 1.5rem;
-            }
-        }
-
-        img {
-            display: block;
-        }
-        .mobile {
-            img {
-                display: none;
             }
         }
     }
