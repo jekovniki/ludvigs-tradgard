@@ -25,6 +25,17 @@
 @media only screen and (min-width: 767px) {
     #section-top {
         padding: 0 2rem 5rem 2rem;
+
+        .two-columns {
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: center;
+    
+            > div {
+                width: 50%;
+            }
+        }
+
         img {
             display: block;
         }
@@ -35,15 +46,7 @@
         }
     }
 
-    .two-columns {
-        display: flex;
-        flex-flow: row-reverse;
-        align-items: center;
-
-        > div {
-            width: 50%;
-        }
-    }
+    
 
 }
 
@@ -148,6 +151,10 @@
     
             > div {
                 width: 50%;
+            }
+
+            .left-column {
+                margin-left: 1.5rem;
             }
         }
 
