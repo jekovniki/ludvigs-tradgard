@@ -38,11 +38,14 @@ header.main {
             }
         }
         #block-ludvigs-branding {
-            a {
+            > a {
                 visibility: hidden;
                 img {
                     visibility: visible;
                 }
+            }
+            > a + a {
+                display: none;
             }
         }
 
