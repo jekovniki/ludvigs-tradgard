@@ -20,12 +20,8 @@
         {{ page.tiles }}
     </section>
 {% endif %}
-{% if page.content %}
-    <main
-    {% if is_front %}
-        style="display: none;"
-    {% endif %}
-    >
+{% if (page.content) and (not root_path) %}
+    <main>
         {{ page.content }}
     </main>
 {% endif %}
