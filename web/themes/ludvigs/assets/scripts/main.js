@@ -7,10 +7,20 @@ function setPlaceholderToForm() {
     const textarea = document.querySelectorAll('form .js-form-wrapper');
 
     for (const item of textfields) {
-        const labels = item.querySelector('label');
-        console.log(labels);
+        const label = item.querySelector('label');
+        const input = item.querySelector('input');
+        input.placeholder = label.innerText;
     }
-
+    for (const item of email) {
+        const label = item.querySelector('label');
+        const input = item.querySelector('input');
+        input.placeholder = label.innerText;
+    } 
+    for (const item of textarea) {
+        const label = item.querySelector('label');
+        const input = item.querySelector('textarea');
+        input.placeholder = label.innerText;
+    } 
 }
 
 setPlaceholderToForm();
