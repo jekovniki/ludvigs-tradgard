@@ -1,0 +1,12 @@
+// Modify forms
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgba(255,255,255, 0.7);
+    border: 3px solid #fff;
+    margin: 3rem 0;
+    border-radius: 2rem;
+    padding: 3rem 0;
+}
