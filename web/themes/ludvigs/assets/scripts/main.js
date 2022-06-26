@@ -1,11 +1,9 @@
 // This is the main javascript file
 
 function setPlaceholderToForm() {
-    console.log(1);
     const textfields = document.querySelectorAll('form .js-form-type-textfield');
     const email = document.querySelectorAll('form .js-form-type-email');
     const textarea = document.querySelectorAll('form .js-form-type-textarea');
-    console.log(textarea);
 
     for (const item of textfields) {
         const label = item.querySelector('label');
@@ -24,8 +22,6 @@ function setPlaceholderToForm() {
     for (const item of textarea) {
         const label = item.querySelector('label');
         const input = item.querySelector('textarea');
-        console.log(label);
-        console.log(input);
         input.placeholder = label.innerText;
         label.remove();
     } 
