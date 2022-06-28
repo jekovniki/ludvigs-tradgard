@@ -27,4 +27,15 @@ function setPlaceholderToForm() {
     } 
 }
 
-setPlaceholderToForm();
+function loopThroughFunction() {
+    let i = 0;
+    let id = setInterval(loop, 200);
+    function loop() {
+        if (i > 10) {
+            clearInterval(id);
+        } else {
+            i++;
+            setPlaceholderToForm();
+        }
+    }
+}
