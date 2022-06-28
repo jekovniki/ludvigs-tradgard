@@ -1,4 +1,5 @@
-// This is the main javascript file
+$(document).ready(() => {
+    // This is the main javascript file
 
 function setPlaceholderToForm() {
     try {
@@ -48,3 +49,6 @@ function loopThroughFunction() {
         }
     }
 }
+
+loopThroughFunction();
+})
