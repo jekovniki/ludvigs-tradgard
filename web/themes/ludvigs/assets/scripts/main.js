@@ -1,30 +1,36 @@
 // This is the main javascript file
 
 function setPlaceholderToForm() {
-    const textfields = document.querySelectorAll('form .js-form-type-textfield');
-    const email = document.querySelectorAll('form .js-form-type-email');
-    const textarea = document.querySelectorAll('form .js-form-type-textarea');
+    try {
+        const textfields = document.querySelectorAll('form .js-form-type-textfield');
+        const email = document.querySelectorAll('form .js-form-type-email');
+        const textarea = document.querySelectorAll('form .js-form-type-textarea');
 
-    for (const item of textfields) {
-        const label = item.querySelector('label');
-        const input = item.querySelector('input');
-        input.placeholder = label.innerText;
-        label.remove();
+        for (const item of textfields) {
+            const label = item.querySelector('label');
+            const input = item.querySelector('input');
+            input.placeholder = label.innerText;
+            label.remove();
+        }
+
+        for (const item of email) {
+            const label = item.querySelector('label');
+            const input = item.querySelector('input');
+            input.placeholder = label.innerText;
+            label.remove();
+        } 
+
+        for (const item of textarea) {
+            const label = item.querySelector('label');
+            const input = item.querySelector('textarea');
+            input.placeholder = label.innerText;
+            label.remove();
+        } 
+        
+        return true;
+    } catch (error) {
+        return false;
     }
-
-    for (const item of email) {
-        const label = item.querySelector('label');
-        const input = item.querySelector('input');
-        input.placeholder = label.innerText;
-        label.remove();
-    } 
-
-    for (const item of textarea) {
-        const label = item.querySelector('label');
-        const input = item.querySelector('textarea');
-        input.placeholder = label.innerText;
-        label.remove();
-    } 
 }
 
 function loopThroughFunction() {
@@ -35,7 +41,10 @@ function loopThroughFunction() {
             clearInterval(id);
         } else {
             i++;
-            setPlaceholderToForm();
+            const loop = setPlaceholderToForm();
+            if (loop === false) {
+                i = 11;
+            }
         }
     }
 }
