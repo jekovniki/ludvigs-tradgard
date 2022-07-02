@@ -1,5 +1,11 @@
 // Modify forms
 
+.contact-message-form {
+    h2 {
+        text-align: center;
+    }
+}
+
 form {
     display: flex;
     flex-flow: column;
