@@ -6,7 +6,7 @@ form {
     align-items: center;
     background: rgba(255,255,255, 0.7);
     border: 3px solid #fff;
-    margin: 3rem 0;
+    margin: 3rem 1rem;
     border-radius: 2rem;
     padding: 3rem 0;
     box-shadow: 0 2px 4px 0 RGB(0 0 0 / 20%);
@@ -29,6 +29,11 @@ form {
                 border: 0px;
                 color: rgba(255,255,255,0.8);
                 border-radius: 5px;
+                
+                &:hover {
+                    color: $main;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -84,11 +89,5 @@ form {
         &:focus-visible {
             border: 2px solid $main;
         }
-    }
-}
-
-@media only screen and (max-width: 766px) {
-    form {
-        margin: 3rem 1rem;
     }
 }
