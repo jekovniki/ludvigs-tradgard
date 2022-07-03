@@ -52,25 +52,24 @@ header.main {
         img {
             height:70px;
         }
+    }
+    .mobile-menu {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 1.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
 
-        .mobile-menu {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            height: 1.5rem;
-            margin-top: auto;
-            margin-bottom: auto;
-    
-            &:hover {
-                cursor: pointer;
-            }
-    
-            .line {
-                height:5px;
-                width: 2rem;
-                border-radius: 5px;
-                background-color: $text-color;
-            }
+        &:hover {
+            cursor: pointer;
+        }
+
+        .line {
+            height:5px;
+            width: 2rem;
+            border-radius: 5px;
+            background-color: $text-color;
         }
     }
 }
@@ -78,10 +77,11 @@ header.main {
 @media only screen and (min-width:767px) {
     header.main {
         padding: 0 2rem;
-    }
-    .mobile-menu {
-        display: none;
-        pointer-events: none;
+        
+        .mobile-menu {
+            display: none;
+            pointer-events: none;
+        }
     }
 }
 
@@ -98,7 +98,7 @@ header.main {
 @media only screen and (max-width: 766px) {
     header.main {
         .header-navigation {
-            >div+div {
+            .navigation {
                 position: absolute;
                 width: 100%;
                 background-color: $white;

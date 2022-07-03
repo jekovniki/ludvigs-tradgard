@@ -51,7 +51,7 @@
                 }
             }
             function showMobileMenu() {
-                const select = document.querySelector('.header-navigation div+div');
+                const select = document.querySelector('.header-navigation .navigation');
                 select.classList.toggle('show');
             }
 
