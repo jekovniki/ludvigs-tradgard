@@ -59,9 +59,13 @@
                 const select = document.querySelector('.header-navigation div+div');
                 select.classList.add('navigation');
             }
-
+            function addMobileMenuEvent() {
+                const select = document.querySelector('.header-navigation .mobile-menu');
+                select.setAttribute("onclick", "showMobileMenu()");
+            }
             loopThroughFunction();
             addNavigationClass();
+            addMobileMenuEvent();
         })
       }
     }
