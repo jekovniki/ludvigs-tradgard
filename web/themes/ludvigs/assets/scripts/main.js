@@ -50,10 +50,6 @@
                     }
                 }
             }
-            function showMobileMenu() {
-                const select = document.querySelector('.header-navigation .navigation');
-                select.classList.toggle('show');
-            }
 
             function addNavigationClass() {
                 const select = document.querySelector('.header-navigation div+div');
@@ -70,3 +66,9 @@
       }
     }
   } (Drupal, drupalSettings, once));
+
+
+function showMobileMenu() {
+    const select = document.querySelector('.header-navigation .navigation');
+    select.classList.toggle('show');
+}
