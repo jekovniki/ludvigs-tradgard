@@ -1,0 +1,29 @@
+// Contact page
+
+.page-node-type-contact-page {
+    main {
+        article {
+            footer {
+                display: none;
+            }
+        }
+
+        .contact-data {
+            .column {
+                display:flex;
+                align-items:center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .page-node-type-contact-page {
+        main {
+            .contact-data {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
