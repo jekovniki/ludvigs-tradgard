@@ -51,12 +51,12 @@
                 }
             }
             function showMobileMenu() {
-                const select = document.querySelector('.header-navigation :nth-child(2)');
+                const select = document.querySelector('.header-navigation div+div');
                 select.classList.toggle('show');
             }
 
             function addNavigationClass() {
-                const select = document.querySelector('.header-navigation :nth-child(2)');
+                const select = document.querySelector('.header-navigation div+div');
                 select.classList.add('navigation');
             }
 
