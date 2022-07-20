@@ -3,6 +3,7 @@ body {
     background-color: $main-bg;
     color: $text-color;
     font-family: $main-font;
+    font-size: normal;
 }
 
 a {
@@ -23,12 +24,17 @@ a {
         color: $main;
     }
 }
+p {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 1.4375rem;
+}
 
 h1 {
-    font-size: 3.25rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-block-end: 1rem;
 }
