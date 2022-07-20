@@ -2,10 +2,13 @@
  * Main colors
  */
 
+ @import url('http://fonts.cdnfonts.com/css/termina');
+
 $main-bg: #f2daaa;
-$main:  #759c25;
+$main:  #749C25;
 $text-color: #674015;
 $white: #ffffff;
+$main-font: 'Termina', sans-serif;
 
 @keyframes fadeIn {
     0% {

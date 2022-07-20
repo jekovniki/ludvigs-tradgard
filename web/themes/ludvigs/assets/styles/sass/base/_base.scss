@@ -2,6 +2,7 @@ body {
     margin: 0px;
     background-color: $main-bg;
     color: $text-color;
+    font-family: $main-font;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
     padding: 10px 20px;
     background-color: $main;
     color: $main-bg;
-    border-radius: 3px;
+    border-radius: 6px;
     transition: 0.3s;
 
     &:hover {
