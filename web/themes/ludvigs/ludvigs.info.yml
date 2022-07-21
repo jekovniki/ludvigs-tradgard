@@ -27,4 +27,5 @@ regions:
   sidebar_second: 'Right Sidebar'
   section_2: 'Middle section'
   section_3: 'Bottom section'
-  footer: 'Footer'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
