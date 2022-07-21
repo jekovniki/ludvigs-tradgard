@@ -81,7 +81,7 @@
         {{ page.section_3 }}
     </section>
 {% endif %}
-{% if page.footer %}
+{% if (page.footer_left) or (page.footer_right) %}
     <footer>
         <div class="footer-left">
             {{ page.footer_left }}
