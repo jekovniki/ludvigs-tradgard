@@ -8,11 +8,11 @@ footer {
 }
 
 .footer-right {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    
     >div {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
         >div {
             width: 25%;
             flex-grow: 1;
