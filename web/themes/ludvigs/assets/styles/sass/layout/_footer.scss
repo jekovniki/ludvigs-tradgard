@@ -10,25 +10,11 @@ footer {
 @media only screen and (min-width: 767px) {
     footer {
         padding: 5rem 2rem;
-
-        #block-ludvigs-footer {
-            color: $text-color;
-        }
-    }
-}
-
-#block-ludvigs-footer {
-    padding: 1.5rem 0;
-
-    >ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1.5rem;
-        font-size: 1.25rem;
-
-        li {
-            a {
-                color: $text-color;
+        .footer-split {
+            display: flex;
+            flex-wrap: wrap;
+            .footer-left, .footer-right {
+                flex: 1;
             }
         }
     }
@@ -44,24 +30,3 @@ footer {
     }
 }
 
-// Social icons
-#block-socialicons {
-    padding: 1.5rem;
-    
-    > div {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-@media only screen and (min-width: 767px) {
-    #block-socialicons {
-        > div {
-            p {
-                img {
-                    margin: 0 2rem;
-                }
-            }
-        }
-    }
-}
