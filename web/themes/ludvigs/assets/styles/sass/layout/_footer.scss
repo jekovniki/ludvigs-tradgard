@@ -12,6 +12,7 @@ footer {
         > ul {
             list-style-type: none;
             font-size: 1.25rem;
+            padding-inline-start: 0px;
             li {
                 margin-bottom: 2rem;
                 a {
@@ -46,6 +47,10 @@ footer {
                 width: 100%;
             }
           }
+
+        img {
+            max-height: 150px;
+        }
     }
 }
 
