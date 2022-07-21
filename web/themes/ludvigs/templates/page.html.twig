@@ -83,11 +83,13 @@
 {% endif %}
 {% if (page.footer_left) or (page.footer_right) %}
     <footer>
-        <div class="footer-left">
-            {{ page.footer_left }}
-        </div>
-        <div class="footer-right">
-            {{ page.footer_right }}
+        <div class="footer-split">
+            <div class="footer-left">
+                {{ page.footer_left }}
+            </div>
+            <div class="footer-right">
+                {{ page.footer_right }}
+            </div>
         </div>
     </footer>
 {% endif %}
