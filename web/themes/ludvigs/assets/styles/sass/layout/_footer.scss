@@ -7,6 +7,26 @@ footer {
     }
 }
 
+.footer-left {
+    nav {
+        > ul {
+            list-style-type: none;
+            font-size: 1.25rem;
+            li {
+                margin-bottom: 2rem;
+                a {
+                    color: #000000;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $main;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .footer-right {
     >div {
         display: flex;
@@ -14,7 +34,7 @@ footer {
         box-sizing: border-box;
 
         >div {
-            width: 25%;
+            width: 20%;
             flex-grow: 1;
             min-height: 87.5px;
             box-sizing: border-box;
