@@ -98,3 +98,9 @@ form {
         }
     }
 }
+
+@media only screen and (max-width: 766px) {
+    form {
+        margin: 3rem 1rem;
+    }
+}
