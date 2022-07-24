@@ -1,20 +1,23 @@
-.two-columns {
-    &.about {
-        .left {
-            margin-top:auto;
-            margin-bottom: auto;
-            .services {
-                margin-top: 50px;
-            }
+.two-columns.about {
+    padding-bottom: 4rem;
+
+    .left {
+        margin-top:auto;
+        margin-bottom: auto;
+        .services {
+            margin-top: 50px;
         }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width:766px) {
-    .two-columns {
-        &.about {
-            display: flex;
-            flex-flow: column-reverse;
-        }
+    .two-columns.about {
+        display: flex;
+        flex-flow: column-reverse;
     }
 }
