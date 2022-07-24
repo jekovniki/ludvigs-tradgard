@@ -1,6 +1,10 @@
 // Contact page
 
 .page-node-type-contact-page {
+    h1, h2, h3, h4, h5, h6, p, form {
+        animation-name: fadeIn;
+        animation-duration: 0.45s;
+    }
     main {
         article {
             footer {
@@ -15,6 +19,13 @@
                 flex-flow: column;
                 font-size: 2rem;
                 margin-bottom: 5rem;
+                animation-name: slideInBottom;
+                animation-duration: 0.75s;
+            }
+
+            img {
+                max-height: 101px;
+                width: auto;
             }
         }
     }
