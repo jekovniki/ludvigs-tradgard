@@ -1,5 +1,8 @@
 .two-columns.about {
     padding-bottom: 4rem;
+    padding-top: 1rem;
+    grid-gap: 5rem;
+
 
     .left {
         margin-top:auto;
@@ -7,6 +10,10 @@
         .services {
             margin-top: 50px;
         }
+    }
+
+    h1 {
+        text-align: left;
     }
 
     img {
