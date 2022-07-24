@@ -41,3 +41,11 @@ h2 {
 .dialog-off-canvas-main-canvas {
     min-height: 100vh;
 }
+
+
+@media only screen and (min-width: 767px) {
+    .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
