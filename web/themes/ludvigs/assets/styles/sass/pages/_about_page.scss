@@ -9,6 +9,7 @@
         margin-bottom: auto;
         .services {
             margin-top: 50px;
+            font-size: 1.5rem;
         }
     }
 
@@ -26,5 +27,16 @@
     .two-columns.about {
         display: flex;
         flex-flow: column-reverse;
+
+        .left {
+            ul {
+                padding-inline-start: 0px;
+                li {
+                    list-style-position: inside;
+                    margin-bottom: 1.3rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }
