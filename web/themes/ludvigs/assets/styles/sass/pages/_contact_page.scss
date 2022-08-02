@@ -17,6 +17,7 @@
                 margin-bottom: 5rem;
                 animation-name: slideInBottom;
                 animation-duration: 0.75s;
+                font-weight: 300;
             }
 
             img {
@@ -33,6 +34,21 @@
             .contact-data {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page-node-type-contact-page {
+        main {
+            .contact-data {
+                .column {
+                    img {
+                        max-width:75px;
+                        height: auto;
+                    }
+                }
             }
         }
     }
