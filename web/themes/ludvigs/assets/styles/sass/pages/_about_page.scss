@@ -41,3 +41,15 @@
         }
     }
 }
+
+@media only screen and (min-width: 767px) {
+    .two-columns.about {
+        .two-columns {
+            &ul {
+                li {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

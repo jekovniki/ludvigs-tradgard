@@ -26,7 +26,7 @@ a {
 }
 p {
     font-family: $main-font;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h1 {
@@ -40,6 +40,12 @@ h2 {
 
 .dialog-off-canvas-main-canvas {
     min-height: 100vh;
+}
+
+@media only screen and (max-width: 766px) {
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 
