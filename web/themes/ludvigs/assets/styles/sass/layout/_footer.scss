@@ -85,14 +85,20 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .footer-left {
-        text-align: center;
-    }
-    .footer-right {
-        >div {
-            img {
-                width: 100%;
+@media only screen and (max-width: 766px) {
+    footer {
+        .footer-split {
+            display: flex;
+            flex-flow:column-reverse;
+            .footer-left {
+                text-align: center;
+            }
+            .footer-right {
+                >div {
+                    img {
+                        width: 80%;
+                    }
+                }
             }
         }
     }
