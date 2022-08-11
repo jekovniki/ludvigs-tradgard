@@ -113,15 +113,24 @@ header.main {
                         background-color: $white;
                         list-style-type: none;
                         padding: 1rem .75rem;
-                        transform: translateY(40px);
+                        transform: translateY(45px);
                         opacity: 1;
                         pointer-events: all;
                         transition: 0.5s;
                         z-index: 100;
                         min-width: 175px;
+                        box-shadow: 0 5px 5px #333;
 
                         > li {
-                            margin: .5rem 0!important;
+                            margin:0!important;
+                            padding: 0.5 0;
+                            transition: 0.3s;
+                            
+                            &:hover {
+                                background-color: $main;
+                                color: $white;
+                                transition: 0.3s;
+                            }
                         }
                     }
                 }
