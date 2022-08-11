@@ -89,6 +89,20 @@ header.main {
             display: none;
             pointer-events: none;
         }
+        // Desktop dropdown
+        #block-gardening, #block-treesforest, #block-facility
+        #block-groundwork, #block-product, #block-authenticateduser {
+            >ul >li {
+                position: relative;
+
+                >ul {
+                    position:absolute;
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                }
+            } 
+        }
     }
 }
 
