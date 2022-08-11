@@ -106,14 +106,16 @@ header.main {
                     top: 0;
                     left: 0;
                     transition: 0.5s;
+                    > li {
+                        padding: 0.25rem 0.75rem;
+                    }
                 }
                 &:hover {
                     cursor: pointer;
                     >ul {
                         background-color: $white;
                         list-style-type: none;
-                        padding: 1rem .75rem;
-                        transform: translateY(45px);
+                        transform: translateY(70px);
                         opacity: 1;
                         pointer-events: all;
                         transition: 0.5s;
@@ -129,7 +131,7 @@ header.main {
                                 background-color: $main;
                                 color: $white;
                                 transition: 0.3s;
-                                span {
+                                a {
                                     color: $white;
                                     transition: 0.3;
                                 }
