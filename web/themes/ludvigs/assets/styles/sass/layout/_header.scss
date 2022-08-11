@@ -90,12 +90,13 @@ header.main {
             pointer-events: none;
         }
         // Desktop dropdown
-        #block-gardening, #block-treesforest, #block-facility
+        #block-gardening, #block-treesforest, #block-facility,
         #block-groundwork, #block-product, #block-authenticateduser {
             >ul >li {
                 position: relative;
 
                 >ul {
+                    padding-inline-start: 0;
                     position:absolute;
                     opacity: 0;
                     top: 0;
