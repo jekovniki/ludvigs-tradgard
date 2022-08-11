@@ -98,9 +98,26 @@ header.main {
                 >ul {
                     padding-inline-start: 0;
                     position:absolute;
+                    pointer-events: none;
                     opacity: 0;
                     top: 0;
                     left: 0;
+                    transition: 0.5s;
+                }
+                &:hover {
+                    >ul {
+                        background-color: $white;
+                        list-style-type: none;
+                        padding: 1rem .75rem;
+                        transform: translateY(46px);
+                        opacity: 1;
+                        pointer-events: all;
+                        transition: 0.5s;
+
+                        > li {
+                            margin: .5rem 0;
+                        }
+                    }
                 }
             } 
         }
