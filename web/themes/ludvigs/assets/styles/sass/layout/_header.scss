@@ -95,6 +95,7 @@ header.main {
             >ul >li {
                 position: relative;
                 color: $main;
+                z-index: 105;
 
                 >ul {
                     padding-inline-start: 0;
@@ -112,7 +113,7 @@ header.main {
                         background-color: $white;
                         list-style-type: none;
                         padding: 1rem .75rem;
-                        transform: translateY(46px);
+                        transform: translateY(40px);
                         opacity: 1;
                         pointer-events: all;
                         transition: 0.5s;
@@ -121,21 +122,6 @@ header.main {
 
                         > li {
                             margin: .5rem 0!important;
-                        }
-
-                        &:hover {
-                            background-color: $white;
-                            list-style-type: none;
-                            padding: 1rem .75rem;
-                            transform: translateY(46px);
-                            opacity: 1;
-                            pointer-events: all;
-                            z-index: 100;
-                            min-width: 175px;
-
-                            > li {
-                                margin: .5rem 0!important;
-                            }
                         }
                     }
                 }
