@@ -83,6 +83,12 @@ function handleMobileDropdown(array) {
         if (selectAllChilds.length > 0) {
             const parentMenu = selectMenu.querySelector('li');
             parentMenu.classList.add('has-children');
+            parentMenu.setAttribute("onclick", `showChildMenu('${element}')`);
         }
     });
+}
+
+function showChildMenu(string) {
+    const select = document.querySelector(`.header-navigation ${string} li`);
+    select.classList.toggle('display');
 }
