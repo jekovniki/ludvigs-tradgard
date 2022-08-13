@@ -108,7 +108,19 @@ header.main {
                     transition: 0.2s;
                     transform: translateY(50px);
                     > li {
-                        padding: 0.35rem 0.75rem;
+                        margin:0!important;
+                        padding: 0.5 0;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: $main;
+                            color: $white;
+                            transition: 0.3s;
+                            a {
+                                color: $white;
+                                transition: 0.3;
+                            }
+                        }
                     }
                 }
                 &:hover {
@@ -116,28 +128,12 @@ header.main {
                     >ul {
                         background-color: $white;
                         list-style-type: none;
-                        transform: translateY(70px);
+                        transform: translateY(71px);
                         opacity: 1;
                         pointer-events: all;
                         transition: 0.5s;
                         z-index: 100;
                         box-shadow: 0 5px 5px #333;
-
-                        > li {
-                            margin:0!important;
-                            padding: 0.5 0;
-                            transition: 0.3s;
-
-                            &:hover {
-                                background-color: $main;
-                                color: $white;
-                                transition: 0.3s;
-                                a {
-                                    color: $white;
-                                    transition: 0.3;
-                                }
-                            }
-                        }
                     }
                 }
             } 
