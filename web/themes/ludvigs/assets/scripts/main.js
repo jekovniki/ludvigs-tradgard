@@ -69,6 +69,6 @@
 
 
 function showMobileMenu() {
-    const select = document.querySelector('.header-navigation .navigation');
+    const select = document.querySelector('.header-navigation div.navigation');
     select.classList.toggle('show');
 }

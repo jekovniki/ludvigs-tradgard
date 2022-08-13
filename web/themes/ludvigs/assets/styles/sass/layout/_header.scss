@@ -74,6 +74,30 @@ header.main {
             background-color: $text-color;
         }
     }
+    // Common dropdown settings
+    #block-gardening, #block-treesforest, #block-facility,
+    #block-groundwork, #block-product, #block-authenticateduser {
+        >ul>li {
+            position: relative;
+            color: $main;
+
+            >ul {
+                padding-inline-start: 0;
+                position:absolute;
+                pointer-events: none;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                transition: 0.2s;
+
+                >li {
+                    margin:0!important;
+                    transition: 0.3s;
+
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width:767px) {
@@ -93,24 +117,13 @@ header.main {
         #block-gardening, #block-treesforest, #block-facility,
         #block-groundwork, #block-product, #block-authenticateduser {
             >ul >li {
-                position: relative;
-                color: $main;
                 padding: 1.7rem 0;
 
                 >ul {
-                    padding-inline-start: 0;
-                    position:absolute;
-                    pointer-events: none;
                     min-width: 175px;
-                    opacity: 0;
-                    top: 0;
-                    left: 0;
-                    transition: 0.2s;
                     transform: translateY(50px);
                     > li {
-                        margin:0!important;
                         padding: 0.5rem;
-                        transition: 0.3s;
 
                         &:hover {
                             background-color: $main;
@@ -154,7 +167,7 @@ header.main {
 @media only screen and (max-width: 766px) {
     header.main {
         .header-navigation {
-            .navigation {
+            div.navigation {
                 position: absolute;
                 width: 100%;
                 background-color: $white;
@@ -162,10 +175,14 @@ header.main {
                 left: 0;
                 transform: translateY(-200px);
                 transition: 0.5s;
+                opacity: 0;
+                pointer-events: none;
 
                 &.show {
                     transform: translateY(74px);
                     transition: 0.5s;
+                    opacity: 1;
+                    pointer-events: all;
                 }
 
                 nav {
@@ -176,6 +193,18 @@ header.main {
                             margin: 0 1.5rem;
                             padding: 1.5rem 1rem;
                         }
+                    }
+                }
+            }
+        }
+        // Mobile menu dropdown
+        #block-gardening, #block-treesforest, #block-facility,
+        #block-groundwork, #block-product, #block-authenticateduser {
+            >ul >li {
+
+                >ul {
+                    >li {
+                        // not empty
                     }
                 }
             }
