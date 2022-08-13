@@ -106,6 +106,7 @@ header.main {
                     top: 0;
                     left: 0;
                     transition: 0.2s;
+                    transform: translateY(50px);
                     > li {
                         padding: 0.35rem 0.75rem;
                     }
