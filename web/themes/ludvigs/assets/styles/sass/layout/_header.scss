@@ -200,12 +200,10 @@ header.main {
         // Mobile menu dropdown
         #block-ludvigs-main-menu, #block-gardening, #block-treesforest, #block-facility,
         #block-groundwork, #block-product, #block-authenticateduser {
-            >ul >li {
-
-                >ul {
-                    >li {
-                        // not empty
-                    }
+            ul {
+                width: 100%;
+                li {
+                    margin: 0!important;
                 }
             }
         }
