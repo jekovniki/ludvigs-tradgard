@@ -204,6 +204,15 @@ header.main {
                 width: 100%;
                 li {
                     margin: 0!important;
+                    border-bottom: 1px solid #eee;
+                    &.has-children {
+                        &::after {
+                            content: "\25b6";
+                            position:absolute;
+                            top: 5px;
+                            right: 2rem;
+                        }
+                    }
                 }
             }
         }

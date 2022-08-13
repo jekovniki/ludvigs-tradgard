@@ -79,11 +79,9 @@ function handleMobileDropdown(array) {
     array.forEach(element => {
         const selectMenu = document.querySelector(`.header-navigation ${element}`);
         const selectAllChilds = selectMenu.querySelectorAll('ul li ul li');
-        console.log('selectAllChilds', selectAllChilds);
 
         if (selectAllChilds.length > 0) {
             const parentMenu = selectMenu.querySelector('li');
-            console.log('parentMenu', parentMenu);
             parentMenu.classList.add('has-children');
         }
     });
