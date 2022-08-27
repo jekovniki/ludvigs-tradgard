@@ -202,6 +202,8 @@ header.main {
         #block-groundwork, #block-product, #block-authenticateduser {
             ul {
                 width: 100%;
+                list-style-type: none;
+                transition: 0.3s;
                 li {
                     margin: 0!important;
                     border-bottom: 1px solid #eee;
@@ -214,6 +216,13 @@ header.main {
                             transform: rotate(90deg);
                         }
                     }
+                }
+                &.open {
+                    position: relative;
+                    transition: 0.3s;
+                    pointer-events: all;
+                    opacity: 1;
+                    padding-top: 1rem;
                 }
             }
         }
