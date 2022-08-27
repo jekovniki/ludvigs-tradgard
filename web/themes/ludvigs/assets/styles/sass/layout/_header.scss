@@ -216,6 +216,13 @@ header.main {
                             transform: rotate(90deg);
                             transition: 0.3s;
                         }
+                        ul {
+                            transition: 0.3s;
+                            li {
+                                opacity: 1;
+                                transition: 0.3s;
+                            }
+                        }
                         &.open {
                             &::after {
                                 transform: rotate(270deg);
@@ -227,6 +234,12 @@ header.main {
                                 pointer-events: all;
                                 opacity: 1;
                                 padding-top: 1rem;
+                                li {
+                                    opacity: 0;
+                                    &:last-child {
+                                        border-bottom: 1px solid transparent;
+                                    }
+                                }
                             }
                         }
                     }
