@@ -62,9 +62,10 @@
                 '#block-groundwork', '#block-product', '#block-authenticateduser']);
 
                 const childrenDropdown = document.querySelectorAll('.has-children');
-                for (const children in childrenDropdown) {
-                    const child = childrenDropdown[children]
-                    child.setAttribute("onclick", `showChildrenMenu()`);
+                for (const children of childrenDropdown) {
+                    children.addEventListener('click', () => {
+                        children.classList.toggle('open');
+                    });
                 }
             }
             loopThroughFunction();
@@ -79,14 +80,6 @@
 function showMobileMenu() {
     const select = document.querySelector('.header-navigation div.navigation');
     select.classList.toggle('show');
-}
-
-// TODO this needs to be fixed:
-function showChildrenMenu() {
-    const select = document.querySelector('.header-navigation div.navigation .has-children');
-    const selectUl = document.querySelector('.header-navigation div.navigation .has-children ul');
-    select.classList.toggle('open');
-    selectUl.classList.toggle('open');
 }
 
 function handleMobileDropdown(array) {
