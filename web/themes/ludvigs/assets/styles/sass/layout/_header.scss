@@ -214,15 +214,22 @@ header.main {
                             top: 1.5rem;
                             right: 1rem;
                             transform: rotate(90deg);
+                            transition: 0.3s;
+                        }
+                        &.open {
+                            &::after {
+                                transform: rotate(270deg);
+                                transition: 0.3s;
+                            }
+                            ul {
+                                position: relative;
+                                transition: 0.3s;
+                                pointer-events: all;
+                                opacity: 1;
+                                padding-top: 1rem;
+                            }
                         }
                     }
-                }
-                &.open {
-                    position: relative;
-                    transition: 0.3s;
-                    pointer-events: all;
-                    opacity: 1;
-                    padding-top: 1rem;
                 }
             }
         }
