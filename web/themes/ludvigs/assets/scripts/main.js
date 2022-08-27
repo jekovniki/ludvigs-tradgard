@@ -60,6 +60,11 @@
                 select.setAttribute("onclick", "showMobileMenu()");
                 handleMobileDropdown(['#block-ludvigs-main-menu', '#block-gardening', '#block-treesforest', '#block-facility',
                 '#block-groundwork', '#block-product', '#block-authenticateduser']);
+
+                const childrenDropdown = document.querySelectorAll('.has-children');
+                childrenDropdown.forEach(element => {
+                    element.setAttribute("onclick", "showChildrenMenu()");
+                })
             }
             loopThroughFunction();
             addNavigationClass();
@@ -75,6 +80,11 @@ function showMobileMenu() {
     select.classList.toggle('show');
 }
 
+function showChildrenMenu() {
+    const select = document.querySelector('.header-navigation div.navigation .has-children ul');
+    select.classList.toggle('open');
+}
+
 function handleMobileDropdown(array) {
     array.forEach(element => {
         const selectMenu = document.querySelector(`.header-navigation ${element}`);
@@ -83,12 +93,12 @@ function handleMobileDropdown(array) {
         if (selectAllChilds.length > 0) {
             const parentMenu = selectMenu.querySelector('li');
             parentMenu.classList.add('has-children');
-            parentMenu.setAttribute("onclick", `showChildMenu('${element}')`);
+        }
+
+        const dropdowns = document.querySelectorAll('.has-children');
+        for (const dropdown of dropdowns) {
+            const children = dropdown.querySelector('ul');
+            children.classList.toggle('show');
         }
     });
-}
-
-function showChildMenu(string) {
-    const select = document.querySelector(`.header-navigation ${string} li`);
-    select.classList.toggle('display');
 }
